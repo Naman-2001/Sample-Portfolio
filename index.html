@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>1ntimat3</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/regular.min.css"
+    integrity="sha512-1yhsV5mlXC9Ve9GDpVWlM/tpG2JdCTMQGNJHvV5TEzAJycWtHfH0/HHSDzHFhFgqtFsm1yWyyHqssFERrYlenA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css"
+    integrity="sha512-xIEmv/u9DeZZRfvRS06QVP2C97Hs5i0ePXDooLa5ZPla3jOgPT/w6CzoSMPuRiumP7A/xhnUBxRmgWWwU26ZeQ=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="#aboutme" class="active" onclick="changeDisplay('aboutme')">Naman Aggarwal</a>
+    <div style="float: right;">
+      <a href="#aboutme" onclick="changeDisplay('aboutme')">About Me</a>
+      <a href="#hobbies" onclick="changeDisplay('hobbies')">My Hobbies</a>
+      <a href="#skills" onclick="changeDisplay('skills')">Skills</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="aboutme" id="aboutme">
+    <div><img src="/images/Naman.jpg" alt="Naman" style="border-radius: 50%; width: 230px">
+      <h1>Naman Aggarwal</h1>
+    </div>
+    <div style="width: 50%;
+      line-height: 3;
+      letter-spacing: 1.5px">
+      <p>I am a Full Stack web developer and a problem solver. With over a year of experience in front-end technologies
+        like React and Redux, I can bring quality and innovation to the table. I am also familiar with back-end
+        technologies like Node.js and MongoDB.</p>
+    </div>
+  </div>
+
+  <div class="hobbies" id="hobbies">
+    <h1>My hobbies</h1>
+    <ul>
+      <li>Freelancing</li>
+      <li>Playing Video Games</li>
+      <li>Playing Football</li>
+      <li>Binge watching WebSeries</li>
+      <li>Working on personal projects</li>
+    </ul>
+  </div>
+
+  <div class="skills" id="skills">
+    <h1>Skills</h1>
+    <ul style="width: 40%;">
+      <li>
+        <div> ReactJs <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+              class="far fa-star"></i></span></div>
+      </li>
+      <li>
+        <div> Redux <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></div>
+      </li>
+      <li>
+        <div> NextJs <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i></span></div>
+      </li>
+      <li>
+        <div> NodeJs <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+              class="far fa-star"></i></span></div>
+      </li>
+      <li>
+        <div> MongoDB <span><i class="far fa-star"></i><i class="far fa-star"></i></span></div>
+      </li>
+      <li>
+        <div> HTML CSS & JS <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i></span></div>
+      </li>
+    </ul>
+  </div>
+
+  </div>
+  <script>
+
+    function changeDisplay(activeDiv) {
+      console.log("clicked");
+      const aboutme = document.getElementsByClassName("aboutme")
+      const hobbies = document.getElementsByClassName("hobbies")
+      const skills = document.getElementsByClassName("skills")
+
+      if (activeDiv === "aboutme") {
+        aboutme[0].style.display = "flex"
+        hobbies[0].style.display = "none";
+        skills[0].style.display = "none";
+      } else if (activeDiv === "hobbies") {
+        hobbies[0].style.display = "flex"
+        aboutme[0].style.display = "none";
+        skills[0].style.display = "none";
+      } else if (activeDiv === "skills") {
+        skills[0].style.display = "flex"
+        aboutme[0].style.display = "none";
+        hobbies[0].style.display = "none";
+      }
+      return;
+    }
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
