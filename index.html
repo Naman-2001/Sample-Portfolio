@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>1ntimat3</title>
   <link rel="stylesheet" href="css/styles.css">
@@ -15,17 +16,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
   <div class="topnav" id="myTopnav">
     <a href="#aboutme" class="active" onclick="changeDisplay('aboutme')">Naman Aggarwal</a>
-    <div style="float: right;">
+    <div class="navFloat">
       <a href="#aboutme" onclick="changeDisplay('aboutme')">About Me</a>
       <a href="#hobbies" onclick="changeDisplay('hobbies')">My Hobbies</a>
       <a href="#skills" onclick="changeDisplay('skills')">Skills</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a  class="icon" onclick="myFunction()">
         <i class="fas fa-bars"></i>
       </a>
     </div>
@@ -36,9 +38,7 @@
     <div><img src="/images/naman.jpg" alt="Naman" style="border-radius: 50%; width: 230px">
       <h1>Naman Aggarwal</h1>
     </div>
-    <div style="width: 50%;
-      line-height: 3;
-      letter-spacing: 1.5px">
+    <div class="aboutmePara">
       <p>I am a Full Stack web developer and a problem solver. With over a year of experience in front-end technologies
         like React and Redux, I can bring quality and innovation to the table. I am also familiar with back-end
         technologies like Node.js and MongoDB.</p>
@@ -47,7 +47,7 @@
 
   <div class="hobbies" id="hobbies">
     <h1>My hobbies</h1>
-    <ul>
+    <ul style="line-height: 1.5;">
       <li>Freelancing</li>
       <li>Playing Video Games</li>
       <li>Playing Football</li>
@@ -58,17 +58,13 @@
 
   <div class="skills" id="skills">
     <h1>Skills</h1>
-    <ul style="width: 40%;">
+    <ul class="skillsDiv">
       <li>
         <div> ReactJs <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
               class="far fa-star"></i></span></div>
       </li>
       <li>
         <div> Redux <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></div>
-      </li>
-      <li>
-        <div> NextJs <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
-              class="far fa-star"></i><i class="far fa-star"></i></span></div>
       </li>
       <li>
         <div> NodeJs <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
